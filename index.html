@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .data{
+            position: relative;
+            top: 300px;
+            left: 400px;
+        }
+        h1{
+            font-size: 80px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 30px;
+        }
+        /* .clock{
+            position: relative;
+            top: 300px;
+            left: 520px;
+            background-color: black;
+        } */
+        .search{
+            position: relative;
+            left: 900px;
+            top: 150px; 
+        }
+        .search input{
+            height: 30px;
+            text-align: center;
+            border: 2px solid transparent;
+            border-bottom: 4px solid black;
+        }
+        .button{
+            position: relative;
+            left: 1020px;
+            top: 170px;
+        }
+        .button button{
+            width: 50px;
+            height: 30px;
+            background-color: black;
+            color: white;
+        }
+       @media(min-width:320px) and (max-width:480px){
+        body{
+            /* background-color: red; */
+            width: 250px;
+        }
+        .search input{
+            width: 100px;
+        }
+        .data{
+            position: relative;
+            top: 50px;
+            left: 80px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 50px;
+        }
+        .search{
+            position: relative;
+            left:50px;
+            top: 90px; 
+            width: 200px;
+        }
+        .search input{
+            height: 20px;
+            text-align: center;
+            width: 230px;
+            border: 2px solid transparent;
+            border-bottom: 4px solid black;
+            font-size: 13px;
+        }
+        .button{
+            position: relative;
+            left: 140px;
+            top: 110px;
+        }
+        .button button{
+            width: 50px;
+            height: 25px;
+            font-size: 15px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <!-- <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:380px;height:80px;"src="https://www.clocklink.com/html5embed.php?clock=047&timezone=India_NewDelhi&color=white&size=380&Title=&Message=&Target=&From=2024,1,1,0,0,0&Color=white" class="clock"></iframe>  -->
+    <div class="data">
+    <h1 class="temp">20</h1>
+    <h2 class="loc">Lucknow</h2>
+    <h2 class="date">12:58-Monday 2024-19-01</h2>
+    <p class="weather">Mist</p>
+    </div>
+    <div class="search">
+    <input type="text" value="Search." size="40" class="sea" onfocus="this.value=''" placeholder="Search.">
+    </div>
+    <div class="button">
+        <form>
+        <button type="submit" class="btn">Get</button>
+    </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> 
+    <script src="./weather.js"></script>
+</body>
+</html>
